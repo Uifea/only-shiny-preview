@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyShiny</title>
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container"> <a class="header__logo" href="/html/index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
+                <div class="header__top-container">
+                    <form class="header__search">
+                        <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
+                        <div class="header__search-icon"></div>
+                    </form><a class="header__collection" href="/html/collection.html"> </a><a class="header__login" href="/html/personal.html"> </a>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__burger-btn"><span class="header__burger-icon"></span></div>
+                    <div class="header__mobile-close"></div>
+                    <div class="header__mobile-wrapper">
+                        <form class="header__search-mobile">
+                            <div class="header__search-input search-mobile"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
+                            <div class="header__search-icon js-search-mob"></div>
+                        </form>
+                        <ul class="header__mobile-menu">
+                            <li class="header__mobile-link"> <a href="">Главная</a></li>
+                            <li class="header__mobile-link"><a href="">Шайнидекс</a></li>
+                            <li class="header__mobile-link"><a href="">Счетчик</a></li>
+                            <li class="header__mobile-link"><a href="">Статьи</a></li>
+                            <li class="header__mobile-link"><a href="">Новости</a></li>
+                        </ul>
+                        <div class="header__mobile-btns"> <a class="header__mobile-link" href=""> <span>Личный кабинет</span></a><a class="header__mobile-link" href="/html/collection.html"><span>Моя коллекция</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <ul class="header__menu">
+                    <li class="header__menu-link"> <a href="/html/index.html">Главная</a></li>
+                    <li class="header__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                    <li class="header__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
+                    <li class="header__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                    <li class="header__menu-link"><a href="/html/news.html">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs"><span><a href="/">Главная</a></span><span><a href="/">Шайнидекс</a></span><span>Покемон</span></div>
+            <section class="pokemon">
+                <h1 class="pokemon__name">Бульбасавр</h1>
+                <div class="pokemon__wrapper">
+                    <div class="pokemon__image"> <img class="pokemon__img" src="assets/img/poke_bulba.png" alt="">
+                        <div class="pokemon__sparkle"> </div>
+                    </div>
+                    <div class="pokemon__wrapper-rang">
+                        <div class="pokemon__rang">#001</div><a class="pokemon__counter-link" href=""></a>
+                    </div>
+                    <div class="pokemon__info-type">
+                        <div class="pokemon__type-name">ТИП</div>
+                        <div class="pokemon__types">
+                            <div class="pokemon__type" style="background-color:#9bcc50;">GRASS </div>
+                            <div class="pokemon__type" style="background-color:#b97fc9;">POISON </div>
+                        </div>
+                    </div>
+                    <div class="pokemon__info-weakness">
+                        <div class="pokemon__weakness-name">СЛАБОСТИ</div>
+                        <div class="pokemon__weaknesses">
+                            <div class="pokemon__weakness" style="background-color:#fd7d24;">FIRE <sup>*2</sup></div>
+                            <div class="pokemon__weakness" style="background-color:#51c4e7;">ICE <sup>*2</sup></div>
+                            <div class="pokemon__weakness" style="background-color:#3dc7ef;">FLYING <sup>*1</sup></div>
+                            <div class="pokemon__weakness" style="background-color:#f366b9;">PSYHIC <sup>*2</sup></div>
+                        </div>
+                    </div>
+                    <div class="pokemon__about">
+                        <div class="pokemon__stats">
+                            <div class="pokemon__height-name">РОСТ</div>
+                            <div class="pokemon__height">0.7 m</div>
+                            <div class="pokemon__weight-name">ВЕС</div>
+                            <div class="pokemon__weight">6.9 кг</div>
+                        </div>
+                        <div class="pokemon__gender">
+                            <div class="pokemon__gender-name">ПОЛ </div>
+                            <div class="pokemon__percent-male">87.5%</div>
+                            <div class="pokemon__percent-female">12.5%</div>
+                        </div>
+                        <div class="pokemon__info-abilities">
+                            <div class="pokemon__ability-container">
+                                <div class="pokemon__ability-name">способность</div><a class="pokemon__ability" href="#">Overgrow</a>
+                            </div>
+                            <div class="pokemon__ability-container">
+                                <div class="pokemon__hidden-name">скрытая</div><a class="pokemon__hidden" href="#">Chlorophyll</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pokemon__description">
+                    <h2 class="pokemon__descr-title">описание</h2>
+                    <div class="pokemon__descr-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</div>
+                </div>
+                <div class="pokemon__container">
+                    <div class="pokemon__locations">
+                        <h2 class="pokemon__location-title">локации</h2>
+                        <div class="pokemon__location-list">
+                            <div class="pokemon__location">
+                                <div class="pokemon__game" style="color:#d10000;">Red</div>
+                                <div class="pokemon__loc-info">Pallet Town</div>
+                            </div>
+                            <div class="pokemon__location">
+                                <div class="pokemon__game" style="color:#000ad1;">Blue</div>
+                                <div class="pokemon__loc-info">Pallet Town</div>
+                            </div>
+                            <div class="pokemon__location">
+                                <div class="pokemon__game" style="color:#e9b60e;">Yellow</div>
+                                <div class="pokemon__loc-info">Pallet Town</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pokemon__other">
+                        <h2 class="pokemon__other-title">Прочее</h2>
+                        <div class="pokemon__other-list">
+                            <div class="pokemon__forms">
+                                <div class="pokemon__forms-vers">
+                                    <h3 class="pokemon__forms-title">Мегаэволюция</h3>
+                                    <div class="pokemon__forms-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                </div>
+                                <div class="pokemon__forms-vers">
+                                    <h3 class="pokemon__forms-title">Алола форма</h3>
+                                    <div class="pokemon__forms-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                </div>
+                                <div class="pokemon__forms-vers">
+                                    <h3 class="pokemon__forms-title">женская версия</h3>
+                                    <div class="pokemon__forms-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="pokemon__other-wrapper">
+                                <div class="pokemon__breeding">
+                                    <h3 class="pokemon__breed-title">бридинг</h3>
+                                    <div class="pokemon__egg-group">Яйцевая группа:<span>grass, monster</span></div>
+                                    <div class="pokemon__cycle">цикл:<span>20 (4,884–5,140 шагов)</span></div>
+                                </div>
+                                <div class="ability-info">
+                                    <h3 class="ability-info__title">описание способностей</h3>
+                                    <div class="ability-info__name">Overgrow</div>
+                                    <div class="ability-info__text">Повышает урон от травяных атак на 50%, если здоровье покемона меньше 1/3</div>
+                                    <div class="ability-info__hidden">Chlorophyll</div>
+                                    <div class="ability-info__hidden-descr">Повышает скорость покемона вдвое во время солнечной погоды</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pokemon__evolutions">
+                    <div class="pokemon__evolutions-title">эволюции</div>
+                    <div class="pokemon__evolutions-list">
+                        <div class="pokemon__item">
+                            <div class="pokemon__img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                            <div class="pokemon__next-row">
+                                <div class="pokemon__next-icon"></div>
+                                <div class="pokemon__level">Lv.16</div>
+                            </div>
+                        </div>
+                        <div class="pokemon__item">
+                            <div class="pokemon__img"> <img src="assets/img/ivisavr.png" alt=""></div>
+                            <div class="pokemon__next-row">
+                                <div class="pokemon__next-icon reverse"></div>
+                                <div class="pokemon__level">Lv.32</div>
+                            </div>
+                        </div>
+                        <div class="pokemon__item">
+                            <div class="pokemon__img"> <img src="assets/img/venosavr.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pokemon__pagination"> <a class="pokemon__prev" href=""> <span class="pokemon__page-link">#1010 Ivisavr</span></a><a class="pokemon__next" href=""><span class="pokemon__page-link">#1010 Ivisavr</span></a></div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__right">
+                    <div class="footer__menu">
+                        <ul class="footer__menu-right">
+                            <li class="footer__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                            <li class="footer__menu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="footer__menu-link"> <a href="/html/shinydex.html">шайнидекс</a></li>
+                            <li class="footer__menu-link"> <a href="/html/counter-page.html">счетчик</a></li>
+                        </ul>
+                        <ul class="footer__menu-left">
+                            <li class="footer__menu-link"><a href="/html/collection.html">коллекции</a></li>
+                            <li class="footer__menu-link"><a href="/html/зукыщтфд.html">личный кабинет</a></li>
+                            <li class="footer__menu-link"><a href="/html/strimers.html">стримеры</a></li>
+                            <li class="footer__menu-link"><a href="/html/support.html">поддержка</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/icon-twitch-bk.png)"></a></div>
+                </div>
+                <div class="footer__img"> <img src="assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
+            </div>
+            <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">Политика конфиденциальности</a></div>
+        </div>
+    </footer>
+    <div class="modal-acc-exit">
+        <div class="modal-acc-exit__body">
+            <div class="modal-acc-exit__close"></div>
+            <div class="modal-acc-exit__title">Выйти из аккаунта</div>
+            <div class="modal-acc-exit__desc">Вы уверены, что хотите выйти из аккаунта?</div>
+            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">выйти</button><button class="btn btn-white modal-acc-exit__btn-close">отмена</button></div>
+        </div>
+    </div>
+    <div class="modal-del-find">
+        <div class="modal-del-find__body">
+            <div class="modal-del-find__close"> </div>
+            <div class="modal-del-find__title">Удалить покемона из истории?</div>
+            <div class="modal-del-find__desc">Вы уверены, что хотите удалить информацию о поиске покемона из истории? Удаленная информация не подлежит восстонавлению</div>
+            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">удалить</button><button class="btn btn-white modal-del-find__btn-close">отмена</button></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

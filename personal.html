@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyShiny</title>
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container"> <a class="header__logo" href="/html/index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
+                <div class="header__top-container">
+                    <form class="header__search">
+                        <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
+                        <div class="header__search-icon"></div>
+                    </form><a class="header__collection" href="/html/collection.html"> </a><a class="header__login" href="/html/personal.html"> </a>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__burger-btn"><span class="header__burger-icon"></span></div>
+                    <div class="header__mobile-close"></div>
+                    <div class="header__mobile-wrapper">
+                        <form class="header__search-mobile">
+                            <div class="header__search-input search-mobile"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
+                            <div class="header__search-icon js-search-mob"></div>
+                        </form>
+                        <ul class="header__mobile-menu">
+                            <li class="header__mobile-link"> <a href="">Главная</a></li>
+                            <li class="header__mobile-link"><a href="">Шайнидекс</a></li>
+                            <li class="header__mobile-link"><a href="">Счетчик</a></li>
+                            <li class="header__mobile-link"><a href="">Статьи</a></li>
+                            <li class="header__mobile-link"><a href="">Новости</a></li>
+                        </ul>
+                        <div class="header__mobile-btns"> <a class="header__mobile-link" href=""> <span>Личный кабинет</span></a><a class="header__mobile-link" href="/html/collection.html"><span>Моя коллекция</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <ul class="header__menu">
+                    <li class="header__menu-link"> <a href="/html/index.html">Главная</a></li>
+                    <li class="header__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                    <li class="header__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
+                    <li class="header__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                    <li class="header__menu-link"><a href="/html/news.html">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs"><span><a href="/">Главная</a></span><span>Личный кабинет</span></div>
+            <section class="personal-acc">
+                <h1 class="personal-acc__title">Личный кабинет</h1>
+                <div class="personal-acc__container">
+                    <div class="personal-acc__sidebar">
+                        <div class="personal-acc__sidebar-btns active" data-tab="settings">настройки аккаунта</div>
+                        <div class="personal-acc__sidebar-btns" data-tab="history">история ханта</div>
+                        <div class="personal-acc__sidebar-btns" data-tab="exit">выйти</div>
+                    </div>
+                    <div class="personal-acc__page">
+                        <div class="personal-acc__settings active">
+                            <h2 class="personal-acc__settings-title">Персональные данные</h2>
+                            <div class="personal-acc__wrapper">
+                                <div class="personal-acc__info">Никнейм</div>
+                                <div class="personal-acc__value">Uifea</div>
+                            </div>
+                            <div class="personal-acc__wrapper">
+                                <div class="personal-acc__info">Email</div>
+                                <div class="personal-acc__value">uifeadevi@gmail.com</div>
+                            </div>
+                            <div class="personal-acc__btns"> <button class="btn btn-black personal-acc__btn-upd js-upd-info">Обновить данные</button><button class="personal-acc__pass-btn js-change-pass">Изменить пароль</button></div>
+                            <div class="personal-acc__update">
+                                <form action=""><input class="personal-acc__input personal-acc__nic" type="text" value="Uifea" placeholder="Никнейм"><input class="personal-acc__input personal-acc__email" type="text" value="uifeadevi@gmail.com" placeholder="Email"><input class="btn btn-black personal-acc__submit js-upd-info-submit" type="submit" value="Сохранить изменения"></form>
+                            </div>
+                            <div class="personal-acc__change-pass">
+                                <form action=""><input class="personal-acc__input" type="text" value="" placeholder="Новый пароль"><input class="personal-acc__input" type="text" value="" placeholder="Подтвердите новый пароль"><input class="btn btn-black personal-acc__submit js-upd-pass-submit" type="submit" value="Изменить пароль"></form>
+                            </div>
+                        </div>
+                        <div class="personal-acc__history">
+                            <div class="personal-acc__active-hunt active-hunts">
+                                <h2 class="active-hunts__title">Активные счетчики</h2>
+                                <div class="active-hunts__list">
+                                    <div class="active-hunts__pokemon">
+                                        <div class="active-hunts__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="active-hunts__pokemon-name"> <span>bulbasaur </span></div>
+                                        <div class="active-hunts__pokemon-count">525</div>
+                                        <div class="active-hunts__pokemon-link"> <a href="">Продолжить</a></div>
+                                    </div>
+                                    <div class="active-hunts__pokemon">
+                                        <div class="active-hunts__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="active-hunts__pokemon-name"> <span>bulbasaur </span></div>
+                                        <div class="active-hunts__pokemon-count">525</div>
+                                        <div class="active-hunts__pokemon-link"> <a href="">Продолжить</a></div>
+                                    </div>
+                                    <div class="active-hunts__pokemon">
+                                        <div class="active-hunts__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="active-hunts__pokemon-name"> <span>bulbasaur </span></div>
+                                        <div class="active-hunts__pokemon-count">525</div>
+                                        <div class="active-hunts__pokemon-link"> <a href="">Продолжить</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personal-acc__find find-shiny">
+                                <h2 class="find-shiny__title">Найденные шайни</h2>
+                                <div class="find-shiny__list">
+                                    <div class="find-shiny__pokemon">
+                                        <div class="find-shiny__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="find-shiny__pokemon-name"> <span>bulbasaur</span><span class="find-shiny__pokemon-edit"> </span></div>
+                                        <div class="find-shiny__info">
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">попыток:</div>
+                                                <div class="find-shiny__value">525</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">метод:</div>
+                                                <div class="find-shiny__value">sos-chain</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">игра:</div>
+                                                <div class="find-shiny__value">POKEMON ULTRA SUN</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">время:</div>
+                                                <div class="find-shiny__value">00:30:15</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">шанс:</div>
+                                                <div class="find-shiny__value">1/525</div>
+                                            </div>
+                                        </div><button class="find-shiny__del"></button>
+                                    </div>
+                                    <div class="find-shiny__pokemon">
+                                        <div class="find-shiny__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="find-shiny__pokemon-name"> <span>bulbasaur</span><span class="find-shiny__pokemon-edit"> </span></div>
+                                        <div class="find-shiny__info">
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">попыток:</div>
+                                                <div class="find-shiny__value">525</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">метод:</div>
+                                                <div class="find-shiny__value">sos-chain</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">игра:</div>
+                                                <div class="find-shiny__value">POKEMON ULTRA SUN</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">время:</div>
+                                                <div class="find-shiny__value">00:30:15</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">шанс:</div>
+                                                <div class="find-shiny__value">1/525</div>
+                                            </div>
+                                        </div><button class="find-shiny__del"></button>
+                                    </div>
+                                    <div class="find-shiny__pokemon">
+                                        <div class="find-shiny__pokemon-img"> <img src="assets/img/poke_bulba.png" alt=""></div>
+                                        <div class="find-shiny__pokemon-name"> <span>bulbasaur</span><span class="find-shiny__pokemon-edit"> </span></div>
+                                        <div class="find-shiny__info">
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">попыток:</div>
+                                                <div class="find-shiny__value">525</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">метод:</div>
+                                                <div class="find-shiny__value">sos-chain</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">игра:</div>
+                                                <div class="find-shiny__value">POKEMON ULTRA SUN</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">время:</div>
+                                                <div class="find-shiny__value">00:30:15</div>
+                                            </div>
+                                            <div class="find-shiny__wrapper">
+                                                <div class="find-shiny__name">шанс:</div>
+                                                <div class="find-shiny__value">1/525</div>
+                                            </div>
+                                        </div><button class="find-shiny__del"></button>
+                                    </div>
+                                    <div class="load-more">
+                                        <div class="load-more-btn btn btn-black"> <span>Показать еще</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__right">
+                    <div class="footer__menu">
+                        <ul class="footer__menu-right">
+                            <li class="footer__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                            <li class="footer__menu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="footer__menu-link"> <a href="/html/shinydex.html">шайнидекс</a></li>
+                            <li class="footer__menu-link"> <a href="/html/counter-page.html">счетчик</a></li>
+                        </ul>
+                        <ul class="footer__menu-left">
+                            <li class="footer__menu-link"><a href="/html/collection.html">коллекции</a></li>
+                            <li class="footer__menu-link"><a href="/html/зукыщтфд.html">личный кабинет</a></li>
+                            <li class="footer__menu-link"><a href="/html/strimers.html">стримеры</a></li>
+                            <li class="footer__menu-link"><a href="/html/support.html">поддержка</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/icon-twitch-bk.png)"></a></div>
+                </div>
+                <div class="footer__img"> <img src="assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
+            </div>
+            <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">Политика конфиденциальности</a></div>
+        </div>
+    </footer>
+    <div class="modal-acc-exit">
+        <div class="modal-acc-exit__body">
+            <div class="modal-acc-exit__close"></div>
+            <div class="modal-acc-exit__title">Выйти из аккаунта</div>
+            <div class="modal-acc-exit__desc">Вы уверены, что хотите выйти из аккаунта?</div>
+            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">выйти</button><button class="btn btn-white modal-acc-exit__btn-close">отмена</button></div>
+        </div>
+    </div>
+    <div class="modal-del-find">
+        <div class="modal-del-find__body">
+            <div class="modal-del-find__close"> </div>
+            <div class="modal-del-find__title">Удалить покемона из истории?</div>
+            <div class="modal-del-find__desc">Вы уверены, что хотите удалить информацию о поиске покемона из истории? Удаленная информация не подлежит восстонавлению</div>
+            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">удалить</button><button class="btn btn-white modal-del-find__btn-close">отмена</button></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
