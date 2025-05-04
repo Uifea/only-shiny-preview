@@ -15,35 +15,42 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container"> <a class="header__logo" href="index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
+            <div class="container"> <a class="header__logo" href="/html/index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
                 <div class="header__top-container">
                     <form class="header__search">
                         <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
                         <div class="header__search-icon"></div>
-                    </form><a class="header__collection" href=""> </a><a class="header__login" href=""> </a>
+                    </form><a class="header__collection" href="/html/collection.html"> </a><a class="header__login" href="/html/personal.html"> </a>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__burger-btn"><span class="header__burger-icon"></span></div>
+                    <div class="header__mobile-close"></div>
+                    <div class="header__mobile-wrapper">
+                        <form class="header__search-mobile">
+                            <div class="header__search-input search-mobile"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
+                            <div class="header__search-icon js-search-mob"></div>
+                        </form>
+                        <ul class="header__mobile-menu">
+                            <li class="header__mobile-link"> <a href="">Главная</a></li>
+                            <li class="header__mobile-link"><a href="">Шайнидекс</a></li>
+                            <li class="header__mobile-link"><a href="">Счетчик</a></li>
+                            <li class="header__mobile-link"><a href="">Статьи</a></li>
+                            <li class="header__mobile-link"><a href="">Новости</a></li>
+                        </ul>
+                        <div class="header__mobile-btns"> <a class="header__mobile-link" href=""> <span>Личный кабинет</span></a><a class="header__mobile-link" href="/html/collection.html"><span>Моя коллекция</span></a></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="header__bottom">
             <div class="container">
                 <ul class="header__menu">
-                    <li class="header__menu-link"> <a href="index.html">Главная</a></li>
-                    <li class="header__menu-link"> <a href="">Шайнидекс</a></li>
-                    <li class="header__menu-link"> <a href="counter-page.html">Счетчик</a></li>
-                    <li class="header__menu-link"><a href="articles.html">Статьи</a></li>
-                    <li class="header__menu-link"><a href="news.html">Новости</a></li>
+                    <li class="header__menu-link"> <a href="/html/index.html">Главная</a></li>
+                    <li class="header__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                    <li class="header__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
+                    <li class="header__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                    <li class="header__menu-link"><a href="/html/news.html">Новости</a></li>
                 </ul>
-                <div class="header__burger-btn"></div>
-                <div class="header__mobile-menu">
-                    <div class="header__mobile-close"></div>
-                    <ul class="header__mobile-menu">
-                        <li class="header__mobile-link">Главная</li>
-                        <li class="header__mobile-link">Шайнидекс</li>
-                        <li class="header__mobile-link">Счетчик</li>
-                        <li class="header__mobile-link">Статьи</li>
-                        <li class="header__mobile-link">Новости</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </header>
@@ -52,50 +59,68 @@
             <div class="breadcrumbs"><span><a href="/">Главная</a></span><span>Cчетчик</span></div>
             <div class="counter">
                 <h1 class="counter__title">Счетчик встреч</h1>
-                <section class="counter__block">
-                    <div class="counter__pokemon">
-                        <div class="counter__pokemon-img"> <img src="assets/img/rowlet.png" alt="pokemon card"></div>
-                        <div class="counter__pokemon-number">
-                            <div class="counter__hunt-count">1 054</div><span class="counter__edit"></span>
-                        </div>
-                        <div class="counter__control">
-                            <div class="counter__plus"></div>
-                            <div class="counter__minus"></div>
-                        </div>
-                    </div>
-                    <div class="counter__data">
-                        <div class="counter__data-list">
-                            <div class="counter__data-names">
-                                <div class="counter__data-name">Версия игры:</div>
-                                <div class="counter__data-name">Покемон:</div>
-                                <div class="counter__data-name">Метод поиска:</div>
-                                <div class="counter__data-name">Шайни чарм:</div>
-                                <div class="counter__data-name">Шаг: </div>
+                <section class="counter__list">
+                    <div class="counter__block">
+                        <div class="counter__pokemon">
+                            <div class="counter__pokemon-img"> <img src="assets/img/rowlet.png" alt="pokemon card"></div>
+                            <div class="counter__hunt-input"> <input class="counter__hunt-value" type="text" value="1 054"><button class="counter__hunt-btn">Применить</button></div>
+                            <div class="counter__pokemon-number">
+                                <div class="counter__hunt-count" data-count="1 054">1 054</div><button class="counter__edit js-count-edit"></button>
                             </div>
-                            <div class="counter__data-values">
-                                <div class="counter__data-value">Pokemon Ultra Sun</div>
-                                <div class="counter__data-value">Rowlet</div>
-                                <div class="counter__data-value">Масуда</div>
-                                <div class="counter__data-value">
-                                    <div class="counter__data-charm"></div>
+                            <div class="counter__control"><button class="counter__plus"></button><button class="counter__minus"></button></div>
+                        </div>
+                        <div class="counter__data">
+                            <div class="counter__result">
+                                <div class="counter__result-title">Поздравляем!</div>
+                                <div class="counter__result-data">
+                                    <div class="counter__result-wrapper">
+                                        <div class="counter__result-name">Покемон</div>
+                                        <div class="counter__result-name">Количество попыток</div>
+                                        <div class="counter__result-name">Метод</div>
+                                        <div class="counter__result-name">Игра</div>
+                                        <div class="counter__result-name">Время</div>
+                                        <div class="counter__result-name">Шанс встречи</div>
+                                        <div class="counter__result-name">Дата</div>
+                                    </div>
+                                    <div class="counter__result-wrapper">
+                                        <div class="counter__result-value">Rowlet</div>
+                                        <div class="counter__result-value">1054</div>
+                                        <div class="counter__result-value">Масуда</div>
+                                        <div class="counter__result-value">Pokemon Ultra Sun</div>
+                                        <div class="counter__result-value">01:45:50</div>
+                                        <div class="counter__result-value">1/512</div>
+                                        <div class="counter__result-value">23.02.25</div>
+                                    </div>
                                 </div>
-                                <div class="counter__data-value" data-incr="1">
-                                    <div class="counter__data-increment"> <span>1</span></div><span class="counter__edit"> </span>
+                                <div class="counter__result-btns"> <button class="counter__result-prev btn btn-black">вернуться к ханту </button><a class="btn btn-pink counter__result-finish" href=""></a></div>
+                            </div>
+                            <div class="counter__data-list">
+                                <div class="counter__data-names">
+                                    <div class="counter__data-name">Версия игры:</div>
+                                    <div class="counter__data-name">Покемон:</div>
+                                    <div class="counter__data-name">Метод поиска:</div>
+                                    <div class="counter__data-name">Шайни чарм:</div>
+                                    <div class="counter__data-name">Шаг: </div>
+                                </div>
+                                <div class="counter__data-values">
+                                    <div class="counter__data-value">Pokemon Ultra Sun</div>
+                                    <div class="counter__data-value">Rowlet</div>
+                                    <div class="counter__data-value">Масуда</div>
+                                    <div class="counter__data-value"><input class="counter__charm-checkbox" type="checkbox" id="charm" checked><label class="counter__data-charm" for="charm"> </label></div>
+                                    <div class="counter__data-value" data-incr="1">
+                                        <div class="counter__increment-input"><input class="counter__increment-value" type="text" value="1"><button class="counter__increment-btn">Применить</button></div>
+                                        <div class="counter__data-increment"> <span>1</span><button class="counter__edit js-inc-edit"> </button></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="counter__timer">
-                            <div class="counter__timer-info"><span>ТАЙМЕР:</span><span class="counter__cur-time">00:05:27</span></div>
-                            <div class="counter__timer-controls">
-                                <div class="counter__timer-play" style="background-image: url(assets/img/icons/play-white.png);"></div>
-                                <div class="counter__timer-reset" style="background-image: url(assets/img/icons/icon-reset.png);"></div>
+                            <div class="counter__timer">
+                                <div class="counter__timer-info"><span>ТАЙМЕР:</span>
+                                    <div class="counter__cur-time"> <span class="counter__time-hour">00</span>:<span class="counter__time-minute">00</span>:<span class="counter__time-sec">00</span></div>
+                                </div>
+                                <div class="counter__timer-controls"> <button class="counter__timer-play"></button><button class="counter__timer-reset"></button></div>
                             </div>
-                        </div>
-                        <div class="counter__chance"> <span class="counter__chance-name">ШАНС ВСТРЕЧИ:</span><span class="counter__chance-number">1/4096</span></div>
-                        <div class="counter__buttons">
-                            <div class="counter__edit-btn">ИЗМЕНИТЬ НАСТРОЙКИ</div>
-                            <div class="counter__shiny-btn">Шайни</div>
-                            <div class="counter__delete-btn"></div>
+                            <div class="counter__chance"> <span class="counter__chance-name">ШАНС ВСТРЕЧИ:</span><span class="counter__chance-number">1/4096</span></div>
+                            <div class="counter__buttons"> <button class="counter__shiny-btn">Шайни</button><button class="counter__delete-btn"></button></div>
                         </div>
                     </div>
                 </section>
@@ -104,10 +129,10 @@
                     <div class="counter__settings-block">
                         <div class="counter__settings-tabs">
                             <div class="counter__settings-tabs-list">
-                                <div class="counter__settings-tab active" data-tab="pokemon">Выберите покемона</div>
-                                <div class="counter__settings-tab" data-tab="game">Выберите игру</div>
-                                <div class="counter__settings-tab" data-tab="method">Выберите метод</div>
-                                <div class="counter__settings-tab" data-tab="other">Прочие настройки</div>
+                                <div class="counter__settings-tab counter__settings-tab-pokemons js-tab-pokemon active" data-tab="pokemon">Выберите покемона</div>
+                                <div class="counter__settings-tab counter__settings-tab-games js-tab-game disable" data-tab="game">Выберите игру</div>
+                                <div class="counter__settings-tab counter__settings-tab-methods js-tab-method disable" data-tab="method">Выберите метод</div>
+                                <div class="counter__settings-tab counter__settings-tab-other js-tab-other disable" data-tab="other">Прочие настройки</div>
                             </div><button class="counter__settings-btn btn btn-pink disabled">СОХРАНИТЬ НАСТРОЙКИ</button>
                         </div>
                         <div class="counter__settings-body">
@@ -115,68 +140,193 @@
                                 <form action=""><input class="counter__input-search" type="text" placeholder="Поиск">
                                     <div class="counter__search-icon"> </div>
                                 </form>
-                            </div>
-                            <div class="counter__settings-pokemons active">
-                                <div class="counter__pokemon-item active">
-                                    <div class="counter__pokemon-info">
-                                        <div class="counter__pokemon-name">Bulbasaur</div>
-                                        <div class="counter__pokemon-rang">#001</div>
+                                <div class="sort-select">
+                                    <div class="sort-select__title">Выберите поколение:</div>
+                                    <div class="sort-select__container">
+                                        <div class="sort-select__head">1-поколение</div>
+                                        <div class="sort-select__body">
+                                            <div class="sort-option" data-sort="two">2-поколение</div>
+                                            <div class="sort-option" data-sort="three">3-поколение</div>
+                                            <div class="sort-option" data-sort="four">4-поколение</div>
+                                        </div>
                                     </div>
-                                    <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
-                                </div>
-                                <div class="counter__pokemon-item">
-                                    <div class="counter__pokemon-info">
-                                        <div class="counter__pokemon-name">Bulbasaur</div>
-                                        <div class="counter__pokemon-rang">#001</div>
-                                    </div>
-                                    <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
-                                </div>
-                                <div class="counter__pokemon-item">
-                                    <div class="counter__pokemon-info">
-                                        <div class="counter__pokemon-name">Bulbasaur</div>
-                                        <div class="counter__pokemon-rang">#001</div>
-                                    </div>
-                                    <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
-                                </div>
-                                <div class="counter__pokemon-item">
-                                    <div class="counter__pokemon-info">
-                                        <div class="counter__pokemon-name">Bulbasaur</div>
-                                        <div class="counter__pokemon-rang">#001</div>
-                                    </div>
-                                    <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
-                                </div>
-                                <div class="counter__pokemon-item">
-                                    <div class="counter__pokemon-info">
-                                        <div class="counter__pokemon-name">Bulbasaur</div>
-                                        <div class="counter__pokemon-rang">#001</div>
-                                    </div>
-                                    <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                 </div>
                             </div>
-                            <div class="counter__games">
-                                <div class="counter__game">
-                                    <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                    <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                            <div class="counter__settings-wrapper">
+                                <div class="counter__settings-pokemons counter__settings-list active" data-info="pokemon">
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
+                                    <div class="counter__pokemon-item" data-pokemon="001">
+                                        <div class="counter__pokemon-info">
+                                            <div class="counter__pokemon-name">Bulbasaur</div>
+                                            <div class="counter__pokemon-rang">#001</div>
+                                        </div>
+                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                    </div>
                                 </div>
-                                <div class="counter__game">
-                                    <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                    <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                <div class="counter__games counter__settings-list" data-info="game">
+                                    <div class="counter__game" data-game="us">
+                                        <div class="counter__game-name">POKEMON ULTRA SUN</div>
+                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                    </div>
+                                    <div class="counter__game" data-game="us">
+                                        <div class="counter__game-name">POKEMON ULTRA SUN</div>
+                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                    </div>
+                                    <div class="counter__game" data-game="us">
+                                        <div class="counter__game-name">POKEMON ULTRA SUN</div>
+                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                    </div>
                                 </div>
-                                <div class="counter__game">
-                                    <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                    <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                <div class="counter__methods counter__settings-list" data-info="method">
+                                    <div class="counter__method" data-method="masuda">метод масуды</div>
+                                    <div class="counter__method" data-method="sos">SOS chain</div>
+                                    <div class="counter__method" data-method="safari">Friend Safari</div>
+                                    <div class="counter__method" data-method="random">Рандомные встречи</div>
                                 </div>
-                            </div>
-                            <div class="counter__methods">
-                                <div class="counter__method">метод масуды</div>
-                                <div class="counter__method">SOS chain</div>
-                                <div class="counter__method">Friend Safari</div>
-                                <div class="counter__method">Рандомные встречи</div>
-                            </div>
-                            <div class="counter__other-settings">
-                                <div class="counter__other-setting">
-                                    <div class="counter__other-setting-name">шайни чарм</div>
-                                    <div class="counter__other-setting-icon" style="background-image:url(assets/img/Bag_Shiny_Charm.png)"></div>
+                                <div class="counter__other-settings counter__settings-list" data-info="other">
+                                    <div class="counter__other-setting" data-other="charm">
+                                        <div class="counter__other-setting-name">шайни чарм</div>
+                                        <div class="counter__other-setting-icon" style="background-image:url(assets/img/Bag_Shiny_Charm.png)"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,28 +370,45 @@
                 <div class="footer__right">
                     <div class="footer__menu">
                         <ul class="footer__menu-right">
-                            <li class="footer__menu-link"><a href="articles.html">Статьи</a></li>
-                            <li class="footer__menu-link"><a href="news.html">Новости</a></li>
-                            <li class="footer__menu-link"> <a href="">шайнидекс</a></li>
-                            <li class="footer__menu-link"> <a href="counter-page.html">счетчик</a></li>
+                            <li class="footer__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                            <li class="footer__menu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="footer__menu-link"> <a href="/html/shinydex.html">шайнидекс</a></li>
+                            <li class="footer__menu-link"> <a href="/html/counter-page.html">счетчик</a></li>
                         </ul>
                         <ul class="footer__menu-left">
-                            <li class="footer__menu-link"><a href="">о сообществе</a></li>
-                            <li class="footer__menu-link"><a href="">личный кабинет</a></li>
-                            <li class="footer__menu-link"><a href="">стримеры</a></li>
-                            <li class="footer__menu-link"><a href="">поддержка</a></li>
+                            <li class="footer__menu-link"><a href="/html/collection.html">коллекции</a></li>
+                            <li class="footer__menu-link"><a href="/html/зукыщтфд.html">личный кабинет</a></li>
+                            <li class="footer__menu-link"><a href="/html/strimers.html">стримеры</a></li>
+                            <li class="footer__menu-link"><a href="/html/support.html">поддержка</a></li>
                         </ul>
                     </div>
                     <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/icon-twitch-bk.png)"></a></div>
                 </div>
                 <div class="footer__img"> <img src="assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
             </div>
-            <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">©OnlyShiny</a></div>
+            <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">Политика конфиденциальности</a></div>
         </div>
     </footer>
+    <div class="modal-acc-exit">
+        <div class="modal-acc-exit__body">
+            <div class="modal-acc-exit__close"></div>
+            <div class="modal-acc-exit__title">Выйти из аккаунта</div>
+            <div class="modal-acc-exit__desc">Вы уверены, что хотите выйти из аккаунта?</div>
+            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">выйти</button><button class="btn btn-white modal-acc-exit__btn-close">отмена</button></div>
+        </div>
+    </div>
+    <div class="modal-del-find">
+        <div class="modal-del-find__body">
+            <div class="modal-del-find__close"> </div>
+            <div class="modal-del-find__title">Удалить покемона из истории?</div>
+            <div class="modal-del-find__desc">Вы уверены, что хотите удалить информацию о поиске покемона из истории? Удаленная информация не подлежит восстонавлению</div>
+            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">удалить</button><button class="btn btn-white modal-del-find__btn-close">отмена</button></div>
+        </div>
+    </div>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/functions.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
