@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlyShiny</title>
-    <link rel="stylesheet" href="assets/css/fancybox.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/fancybox.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container"> <a class="header__logo" href="index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
-                <div class="header__top-container">
-                    <form class="header__search">
-                        <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
-                        <div class="header__search-icon"></div>
-                    </form><a class="header__collection" href="collection.html"> </a><a class="header__login" href="personal.html"> </a>
-                </div>
+            <div class="container"> <a class="header__logo" href="/html/index.html"> <img src="../assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
+                <ul class="header__menu">
+                    <li class="header__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                    <li class="header__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
+                    <li class="header__menu-link header__menu-link-parent"><a href="/html/useful-page.html">Полезное</a><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.885742 1.00001L3.88574 4.00001L6.88574 1.00001" stroke="#343947" stroke-linecap="round"></path>
+                        </svg>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="header__submenu-link"><a href="/html/articles.html">Гайды</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-link"><a href="/html/collection.html">Коллекция</a></li>
+                    <li class="header__menu-link"><a href="/html/strimers.html">Стримеры</a></li>
+                </ul>
+                <div class="header__top-container"> <button class="header__search-icon"></button><a class="header__login" href="#login"></a></div>
                 <div class="header__mobile">
                     <div class="header__burger-btn"><span class="header__burger-icon"></span></div>
                     <div class="header__mobile-close"></div>
@@ -31,26 +40,32 @@
                             <div class="header__search-icon js-search-mob"></div>
                         </form>
                         <ul class="header__mobile-menu">
-                            <li class="header__mobile-link"> <a href="">Главная</a></li>
                             <li class="header__mobile-link"><a href="">Шайнидекс</a></li>
                             <li class="header__mobile-link"><a href="">Счетчик</a></li>
-                            <li class="header__mobile-link"><a href="">Статьи</a></li>
-                            <li class="header__mobile-link"><a href="">Новости</a></li>
+                            <li class="header__mobile-link header__mobile-link-parent"><a href="">Полезное</a><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.47575 0.0972911L14.2101 6.83164C14.2438 6.86531 14.2774 6.89898 14.2774 6.96633V7.03367C14.2774 7.03367 14.2438 7.06734 14.2774 7.10101C14.2774 7.10101 14.2774 7.10102 14.2438 7.13469L14.2101 7.16836L7.47575 13.9027C7.37474 14.0037 7.24005 14.0037 7.13904 13.9027C7.03802 13.8017 7.03802 13.667 7.13904 13.566L13.4693 7.2357L0.606717 7.2357C0.47203 7.2357 0.371015 7.13469 0.371015 7C0.371015 6.86531 0.47203 6.7643 0.606717 6.7643L13.5367 6.7643L7.17271 0.400337C7.07169 0.299322 7.07169 0.164635 7.17271 0.0636195C7.27372 -0.0373954 7.37474 -0.00372419 7.47575 0.0972911Z" fill="white"></path>
+                                </svg>
+                                <div class="header__mobile-submenu">
+                                    <div class="header__mobile-submenu-back">Полезное</div>
+                                    <ul class="header__mobile-submenu-list">
+                                        <li class="header__mobile-link"><a href="">Гайды</a></li>
+                                        <li class="header__mobile-link"><a href="">Новости</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__mobile-link"><a href="/html/collection.html">Коллекция</a></li>
+                            <li class="header__mobile-link"><a href="/html/strimers.html">Стримеры</a></li>
                         </ul>
-                        <div class="header__mobile-btns"> <a class="header__mobile-link" href=""> <span>Личный кабинет</span></a><a class="header__mobile-link" href="collection.html"><span>Моя коллекция</span></a></div>
+                        <div class="header__mobile-btns"> <a class="btn-light-white btn" href="#login"><span>Личный кабинет</span></a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__bottom">
+        <div class="header__search">
             <div class="container">
-                <ul class="header__menu">
-                    <li class="header__menu-link"> <a href="index.html">Главная</a></li>
-                    <li class="header__menu-link"> <a href="shinydex.html">Шайнидекс</a></li>
-                    <li class="header__menu-link"> <a href="counter-page.html">Счетчик</a></li>
-                    <li class="header__menu-link"><a href="articles.html">Статьи</a></li>
-                    <li class="header__menu-link"><a href="news.html">Новости</a></li>
-                </ul>
+                <form class="header__search-form">
+                    <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input class="header__search-btn btn btn-black" type="submit" value="Найти">
+                </form>
             </div>
         </div>
     </header>
@@ -62,7 +77,7 @@
                 <section class="counter__list">
                     <div class="counter__block">
                         <div class="counter__pokemon">
-                            <div class="counter__pokemon-img"> <img src="assets/img/rowlet.png" alt="pokemon card"></div>
+                            <div class="counter__pokemon-img"> <img src="../assets/img/rowlet.png" alt="pokemon card"></div>
                             <div class="counter__hunt-input"> <input class="counter__hunt-value" type="text" value="1 054"><button class="counter__hunt-btn">Применить</button></div>
                             <div class="counter__pokemon-number">
                                 <div class="counter__hunt-count" data-count="1 054">1 054</div><button class="counter__edit js-count-edit"></button>
@@ -73,45 +88,67 @@
                             <div class="counter__result">
                                 <div class="counter__result-title">Поздравляем!</div>
                                 <div class="counter__result-data">
-                                    <div class="counter__result-wrapper">
-                                        <div class="counter__result-name">Покемон</div>
-                                        <div class="counter__result-name">Количество попыток</div>
-                                        <div class="counter__result-name">Метод</div>
-                                        <div class="counter__result-name">Игра</div>
-                                        <div class="counter__result-name">Время</div>
-                                        <div class="counter__result-name">Шанс встречи</div>
-                                        <div class="counter__result-name">Дата</div>
-                                    </div>
-                                    <div class="counter__result-wrapper">
-                                        <div class="counter__result-value">Rowlet</div>
-                                        <div class="counter__result-value">1054</div>
-                                        <div class="counter__result-value">Масуда</div>
-                                        <div class="counter__result-value">Pokemon Ultra Sun</div>
-                                        <div class="counter__result-value">01:45:50</div>
-                                        <div class="counter__result-value">1/512</div>
-                                        <div class="counter__result-value">23.02.25</div>
-                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>Покемон</td>
+                                            <td>Rowlet</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Количество попыток</td>
+                                            <td>1054</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Метод</td>
+                                            <td>Масуда</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Игра</td>
+                                            <td>Pokemon Ultra Sun</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Время</td>
+                                            <td>01:45:50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Шанс встречи</td>
+                                            <td>1/512</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дата</td>
+                                            <td>23.02.25</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <div class="counter__result-btns"> <button class="counter__result-prev btn btn-black">вернуться к ханту </button><a class="btn btn-pink counter__result-finish" href=""></a></div>
+                                <div class="counter__result-btns"> <button class="counter__result-prev btn btn-black">Вернуться к ханту </button><a class="btn btn-pink counter__result-finish" href=""></a></div>
                             </div>
                             <div class="counter__data-list">
-                                <div class="counter__data-names">
-                                    <div class="counter__data-name">Версия игры:</div>
-                                    <div class="counter__data-name">Покемон:</div>
-                                    <div class="counter__data-name">Метод поиска:</div>
-                                    <div class="counter__data-name">Шайни чарм:</div>
-                                    <div class="counter__data-name">Шаг: </div>
-                                </div>
-                                <div class="counter__data-values">
-                                    <div class="counter__data-value">Pokemon Ultra Sun</div>
-                                    <div class="counter__data-value">Rowlet</div>
-                                    <div class="counter__data-value">Масуда</div>
-                                    <div class="counter__data-value"><input class="counter__charm-checkbox" type="checkbox" id="charm" checked><label class="counter__data-charm" for="charm"> </label></div>
-                                    <div class="counter__data-value" data-incr="1">
-                                        <div class="counter__increment-input"><input class="counter__increment-value" type="text" value="1"><button class="counter__increment-btn">Применить</button></div>
-                                        <div class="counter__data-increment"> <span>1</span><button class="counter__edit js-inc-edit"> </button></div>
-                                    </div>
-                                </div>
+                                <table>
+                                    <tr>
+                                        <td>Версия игры:</td>
+                                        <td>Pokemon Ultra Sun</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Покемон:</td>
+                                        <td>Rowlet</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Метод поиска:</td>
+                                        <td>Масуда</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Шайни чарм:</td>
+                                        <td> <input class="counter__charm-checkbox" type="checkbox" id="charm" checked><label class="counter__data-charm" for="charm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Шаг:</td>
+                                        <td>
+                                            <div class="counter__data-value" data-incr="1">
+                                                <div class="counter__increment-input"><input class="counter__increment-value" type="text" value="1"><button class="counter__increment-btn">Применить</button></div>
+                                                <div class="counter__data-increment"> <span>1</span><button class="counter__edit js-inc-edit"></button></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="counter__timer">
                                 <div class="counter__timer-info"><span>ТАЙМЕР:</span>
@@ -159,161 +196,161 @@
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                     <div class="counter__pokemon-item" data-pokemon="001">
                                         <div class="counter__pokemon-info">
                                             <div class="counter__pokemon-name">Bulbasaur</div>
                                             <div class="counter__pokemon-rang">#001</div>
                                         </div>
-                                        <div class="counter__settings-pokemon-img"> <img src="assets/img/bulbasuar.png" alt="Бульбасавр"></div>
+                                        <div class="counter__settings-pokemon-img"> <img src="../assets/img/bulbasuar.png" alt="Бульбасавр"></div>
                                     </div>
                                 </div>
                                 <div class="counter__games counter__settings-list" data-info="game">
                                     <div class="counter__game" data-game="us">
                                         <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                        <div class="counter__game-img"> <img src="../assets/img/us.png" alt="Pokemon ultra sun"></div>
                                     </div>
                                     <div class="counter__game" data-game="us">
                                         <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                        <div class="counter__game-img"> <img src="../assets/img/us.png" alt="Pokemon ultra sun"></div>
                                     </div>
                                     <div class="counter__game" data-game="us">
                                         <div class="counter__game-name">POKEMON ULTRA SUN</div>
-                                        <div class="counter__game-img"> <img src="assets/img/us.png" alt="Pokemon ultra sun"></div>
+                                        <div class="counter__game-img"> <img src="../assets/img/us.png" alt="Pokemon ultra sun"></div>
                                     </div>
                                 </div>
                                 <div class="counter__methods counter__settings-list" data-info="method">
@@ -325,7 +362,7 @@
                                 <div class="counter__other-settings counter__settings-list" data-info="other">
                                     <div class="counter__other-setting" data-other="charm">
                                         <div class="counter__other-setting-name">шайни чарм</div>
-                                        <div class="counter__other-setting-icon" style="background-image:url(assets/img/Bag_Shiny_Charm.png)"></div>
+                                        <div class="counter__other-setting-icon" style="background-image:url(../assets/img/Bag_Shiny_Charm.png)"></div>
                                     </div>
                                 </div>
                             </div>
@@ -333,24 +370,24 @@
                     </div>
                 </section>
                 <section class="counter__add">
-                    <div class="counter__add-title">добавить новый счетчик</div>
+                    <div class="counter__add-title">Добавить новый счетчик</div>
                     <div class="counter__add-btn"></div>
                 </section>
                 <section class="count-hunts">
-                    <div class="count-hunts__title">список пойманых шайни</div>
+                    <div class="count-hunts__title">Список пойманых шайни</div>
                     <div class="count-hunts__list">
                         <div class="count-hunts__item">
-                            <div class="count-hunts__item-img" style="background-image:url(assets/img/pokemon-oricorio.png)"> </div>
+                            <div class="count-hunts__item-img" style="background-image:url(../assets/img/pokemon-oricorio.png)"> </div>
                             <div class="count-hunts__item-name">орикорио</div>
                             <div class="count-hunts__item-number">525</div>
                         </div>
                         <div class="count-hunts__item">
-                            <div class="count-hunts__item-img" style="background-image:url(assets/img/iron-valiant.png)"></div>
+                            <div class="count-hunts__item-img" style="background-image:url(../assets/img/iron-valiant.png)"></div>
                             <div class="count-hunts__item-name">Железная доблесть</div>
                             <div class="count-hunts__item-number">2024</div>
                         </div>
                         <div class="count-hunts__item">
-                            <div class="count-hunts__item-img" style="background-image:url(assets/img/shaymin.png)"></div>
+                            <div class="count-hunts__item-img" style="background-image:url(../assets/img/shaymin.png)"></div>
                             <div class="count-hunts__item-name">орикорио</div>
                             <div class="count-hunts__item-number">5024</div>
                         </div>
@@ -370,21 +407,21 @@
                 <div class="footer__right">
                     <div class="footer__menu">
                         <ul class="footer__menu-right">
-                            <li class="footer__menu-link"><a href="articles.html">Статьи</a></li>
-                            <li class="footer__menu-link"><a href="news.html">Новости</a></li>
-                            <li class="footer__menu-link"> <a href="shinydex.html">шайнидекс</a></li>
-                            <li class="footer__menu-link"> <a href="counter-page.html">счетчик</a></li>
+                            <li class="footer__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                            <li class="footer__menu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="footer__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                            <li class="footer__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
                         </ul>
                         <ul class="footer__menu-left">
-                            <li class="footer__menu-link"><a href="collection.html">коллекции</a></li>
-                            <li class="footer__menu-link"><a href="зукыщтфд.html">личный кабинет</a></li>
-                            <li class="footer__menu-link"><a href="strimers.html">стримеры</a></li>
-                            <li class="footer__menu-link"><a href="support.html">поддержка</a></li>
+                            <li class="footer__menu-link"><a href="/html/collection.html">Коллекции</a></li>
+                            <li class="footer__menu-link"><a href="/html/зукыщтфд.html">Личный кабинет</a></li>
+                            <li class="footer__menu-link"><a href="/html/strimers.html">Стримеры</a></li>
+                            <li class="footer__menu-link"><a href="/html/support.html">Поддержка</a></li>
                         </ul>
                     </div>
-                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/icon-twitch-bk.png)"></a></div>
+                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/icon-twitch-bk.png)"></a></div>
                 </div>
-                <div class="footer__img"> <img src="assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
+                <div class="footer__img"> <img src="../assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
             </div>
             <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">Политика конфиденциальности</a></div>
         </div>
@@ -394,7 +431,7 @@
             <div class="modal-acc-exit__close"></div>
             <div class="modal-acc-exit__title">Выйти из аккаунта</div>
             <div class="modal-acc-exit__desc">Вы уверены, что хотите выйти из аккаунта?</div>
-            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">выйти</button><button class="btn btn-white modal-acc-exit__btn-close">отмена</button></div>
+            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">Выйти</button><button class="btn btn-white modal-acc-exit__btn-close">Отмена</button></div>
         </div>
     </div>
     <div class="modal-del-find">
@@ -402,14 +439,45 @@
             <div class="modal-del-find__close"> </div>
             <div class="modal-del-find__title">Удалить покемона из истории?</div>
             <div class="modal-del-find__desc">Вы уверены, что хотите удалить информацию о поиске покемона из истории? Удаленная информация не подлежит восстонавлению</div>
-            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">удалить</button><button class="btn btn-white modal-del-find__btn-close">отмена</button></div>
+            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">Удалить</button><button class="btn btn-white modal-del-find__btn-close">Отмена</button></div>
         </div>
     </div>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div class="modal-reg" id="registration">
+        <div class="modal-reg__body">
+            <div class="modal-reg__close"></div>
+            <div class="modal-reg__title">регистрация аккаунта</div>
+            <form class="modal-reg__form">
+                <div class="modal-reg__form-wrapper"> <input class="modal-form-input modal-reg__nic" type="text" name="login" placeholder="Никнейм"><input class="modal-form-input modal-reg__email" type="text" name="email" placeholder="E-mail"></div>
+                <div class="modal-reg__form-wrapper"><input class="modal-form-input modal-reg__pass" type="password" name="pass" placeholder="Пароль"><input class="modal-form-input modal-reg__repeat-pass" type="password" name="repeat-pass" placeholder="Подтверждени пароля"></div>
+                <div class="modal-reg__agreement"><input class="modal-reg__agr-check" type="checkbox" id="agreement-reg" checked><label for="agreement-reg"> <span>Согласие на <a href="">обработку персональных данных</a></span></label></div>
+                <div class="modal-reg__form-wrapper"><input class="modal-reg__submit modal-form-submit btn btn-black" type="submit" value="Зарегистрироваться"></div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-login" id="login">
+        <div class="modal-login__body">
+            <div class="modal-login__close"> </div>
+            <div class="modal-login__title">войти в аккаунт</div>
+            <div class="modal-login__subtitle">Если у вас еще нет аккаунта - пройдите <a class="modal-open-reg" href="#registration">регистрацию</a></div>
+            <form class="modal-login__form">
+                <div class="modal-login__wrapper"><input class="modal-login__input modal-form-input" type="text" placeholder="E-mail"><input class="modal-login__input modal-form-input" type="text" placeholder="Пароль"></div>
+                <div class="modal-login__wrapper modal-login__wrapper--btns"><a class="modal-open-forgot" href="#restore-pass">забыли пароль?</a><input class="modal-login__submit modal-form-submit btn btn-black" type="submit" value="Войти"></div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-forgot" id="restore-pass">
+        <div class="modal-forgot__body">
+            <div class="modal-forgot__close"></div>
+            <div class="modal-forgot__title">Забыли пароль?</div>
+            <div class="modal-forgot__subtitle">Для восстонавления пароля введите ваш email</div>
+            <form class="modal-forgot__form"><input class="modal-form-input modal-forgot__input" type="text" placeholder="E-mail"><input class="modal-form-submit btn btn-black modal-forgot__submit" type="submit" value="Отправить"></form>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

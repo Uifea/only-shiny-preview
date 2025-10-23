@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlyShiny</title>
-    <link rel="stylesheet" href="assets/css/fancybox.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/fancybox.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container"> <a class="header__logo" href="index.html"> <img src="assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
-                <div class="header__top-container">
-                    <form class="header__search">
-                        <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input type="submit">
-                        <div class="header__search-icon"></div>
-                    </form><a class="header__collection" href="collection.html"> </a><a class="header__login" href="personal.html"> </a>
-                </div>
+            <div class="container"> <a class="header__logo" href="/html/index.html"> <img src="../assets/img/logo-only-shiny-3.png" alt="OnlyShiny Лого"></a>
+                <ul class="header__menu">
+                    <li class="header__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                    <li class="header__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
+                    <li class="header__menu-link header__menu-link-parent"><a href="/html/useful-page.html">Полезное</a><svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.885742 1.00001L3.88574 4.00001L6.88574 1.00001" stroke="#343947" stroke-linecap="round"></path>
+                        </svg>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="header__submenu-link"><a href="/html/articles.html">Гайды</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-link"><a href="/html/collection.html">Коллекция</a></li>
+                    <li class="header__menu-link"><a href="/html/strimers.html">Стримеры</a></li>
+                </ul>
+                <div class="header__top-container"> <button class="header__search-icon"></button><a class="header__login" href="#login"></a></div>
                 <div class="header__mobile">
                     <div class="header__burger-btn"><span class="header__burger-icon"></span></div>
                     <div class="header__mobile-close"></div>
@@ -31,26 +40,32 @@
                             <div class="header__search-icon js-search-mob"></div>
                         </form>
                         <ul class="header__mobile-menu">
-                            <li class="header__mobile-link"> <a href="">Главная</a></li>
                             <li class="header__mobile-link"><a href="">Шайнидекс</a></li>
                             <li class="header__mobile-link"><a href="">Счетчик</a></li>
-                            <li class="header__mobile-link"><a href="">Статьи</a></li>
-                            <li class="header__mobile-link"><a href="">Новости</a></li>
+                            <li class="header__mobile-link header__mobile-link-parent"><a href="">Полезное</a><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.47575 0.0972911L14.2101 6.83164C14.2438 6.86531 14.2774 6.89898 14.2774 6.96633V7.03367C14.2774 7.03367 14.2438 7.06734 14.2774 7.10101C14.2774 7.10101 14.2774 7.10102 14.2438 7.13469L14.2101 7.16836L7.47575 13.9027C7.37474 14.0037 7.24005 14.0037 7.13904 13.9027C7.03802 13.8017 7.03802 13.667 7.13904 13.566L13.4693 7.2357L0.606717 7.2357C0.47203 7.2357 0.371015 7.13469 0.371015 7C0.371015 6.86531 0.47203 6.7643 0.606717 6.7643L13.5367 6.7643L7.17271 0.400337C7.07169 0.299322 7.07169 0.164635 7.17271 0.0636195C7.27372 -0.0373954 7.37474 -0.00372419 7.47575 0.0972911Z" fill="white"></path>
+                                </svg>
+                                <div class="header__mobile-submenu">
+                                    <div class="header__mobile-submenu-back">Полезное</div>
+                                    <ul class="header__mobile-submenu-list">
+                                        <li class="header__mobile-link"><a href="">Гайды</a></li>
+                                        <li class="header__mobile-link"><a href="">Новости</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__mobile-link"><a href="/html/collection.html">Коллекция</a></li>
+                            <li class="header__mobile-link"><a href="/html/strimers.html">Стримеры</a></li>
                         </ul>
-                        <div class="header__mobile-btns"> <a class="header__mobile-link" href=""> <span>Личный кабинет</span></a><a class="header__mobile-link" href="collection.html"><span>Моя коллекция</span></a></div>
+                        <div class="header__mobile-btns"> <a class="btn-light-white btn" href="#login"><span>Личный кабинет</span></a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__bottom">
+        <div class="header__search">
             <div class="container">
-                <ul class="header__menu">
-                    <li class="header__menu-link"> <a href="index.html">Главная</a></li>
-                    <li class="header__menu-link"> <a href="shinydex.html">Шайнидекс</a></li>
-                    <li class="header__menu-link"> <a href="counter-page.html">Счетчик</a></li>
-                    <li class="header__menu-link"><a href="articles.html">Статьи</a></li>
-                    <li class="header__menu-link"><a href="news.html">Новости</a></li>
-                </ul>
+                <form class="header__search-form">
+                    <div class="header__search-input"> <input type="text" id="search" name="s" placeholder="Поиск"></div><input class="header__search-btn btn btn-black" type="submit" value="Найти">
+                </form>
             </div>
         </div>
     </header>
@@ -75,7 +90,7 @@
                             <div class="search__item-date">09.11.2024</div>
                         </div>
                         <div class="search__item-bottom">
-                            <div class="search__item-img"> <img src="assets/img/celebi.png" alt=""></div>
+                            <div class="search__item-img"> <img src="../assets/img/celebi.png" alt=""></div>
                             <div class="search__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et vitae, justo.</div>
                         </div>
                     </a><a class="search__item" href="">
@@ -84,7 +99,7 @@
                             <div class="search__item-date">09.11.2024</div>
                         </div>
                         <div class="search__item-bottom">
-                            <div class="search__item-img"> <img src="assets/img/celebi.png" alt=""></div>
+                            <div class="search__item-img"> <img src="../assets/img/celebi.png" alt=""></div>
                             <div class="search__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et vitae, justo. </div>
                         </div>
                     </a></div>
@@ -100,7 +115,7 @@
                     <div class="useful-info__content">
                         <div class="useful-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </div><a class="useful-info__btn btn btn-pink" href="">Шайнидекс</a>
                     </div>
-                    <div class="useful-info__img"><img src="assets/img/shiny-teddiursa.png" alt=""></div>
+                    <div class="useful-info__img"><img src="../assets/img/shiny-teddiursa.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -111,21 +126,21 @@
                 <div class="footer__right">
                     <div class="footer__menu">
                         <ul class="footer__menu-right">
-                            <li class="footer__menu-link"><a href="articles.html">Статьи</a></li>
-                            <li class="footer__menu-link"><a href="news.html">Новости</a></li>
-                            <li class="footer__menu-link"> <a href="shinydex.html">шайнидекс</a></li>
-                            <li class="footer__menu-link"> <a href="counter-page.html">счетчик</a></li>
+                            <li class="footer__menu-link"><a href="/html/articles.html">Статьи</a></li>
+                            <li class="footer__menu-link"><a href="/html/news.html">Новости</a></li>
+                            <li class="footer__menu-link"> <a href="/html/shinydex.html">Шайнидекс</a></li>
+                            <li class="footer__menu-link"> <a href="/html/counter-page.html">Счетчик</a></li>
                         </ul>
                         <ul class="footer__menu-left">
-                            <li class="footer__menu-link"><a href="collection.html">коллекции</a></li>
-                            <li class="footer__menu-link"><a href="зукыщтфд.html">личный кабинет</a></li>
-                            <li class="footer__menu-link"><a href="strimers.html">стримеры</a></li>
-                            <li class="footer__menu-link"><a href="support.html">поддержка</a></li>
+                            <li class="footer__menu-link"><a href="/html/collection.html">Коллекции</a></li>
+                            <li class="footer__menu-link"><a href="/html/зукыщтфд.html">Личный кабинет</a></li>
+                            <li class="footer__menu-link"><a href="/html/strimers.html">Стримеры</a></li>
+                            <li class="footer__menu-link"><a href="/html/support.html">Поддержка</a></li>
                         </ul>
                     </div>
-                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(assets/img/icons/icon-twitch-bk.png)"></a></div>
+                    <div class="footer__social"> <a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/vk-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/telegram-icon-white.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/discord-white-icon.png)"></a><a class="footer__social-link" href="" style="background-image:url(../assets/img/icons/icon-twitch-bk.png)"></a></div>
                 </div>
-                <div class="footer__img"> <img src="assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
+                <div class="footer__img"> <img src="../assets/img/only-shiny-footer.png" alt="OnlyShiny"></div>
             </div>
             <div class="footer__copyright"> <a class="footer__copyright-link" href="https://vk.com/@rushinyhunt" rel="nofollow">Политика конфиденциальности</a></div>
         </div>
@@ -135,7 +150,7 @@
             <div class="modal-acc-exit__close"></div>
             <div class="modal-acc-exit__title">Выйти из аккаунта</div>
             <div class="modal-acc-exit__desc">Вы уверены, что хотите выйти из аккаунта?</div>
-            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">выйти</button><button class="btn btn-white modal-acc-exit__btn-close">отмена</button></div>
+            <div class="modal-acc-exit__btns"> <button class="btn btn-black modal-acc-exit__btn-exit">Выйти</button><button class="btn btn-white modal-acc-exit__btn-close">Отмена</button></div>
         </div>
     </div>
     <div class="modal-del-find">
@@ -143,14 +158,45 @@
             <div class="modal-del-find__close"> </div>
             <div class="modal-del-find__title">Удалить покемона из истории?</div>
             <div class="modal-del-find__desc">Вы уверены, что хотите удалить информацию о поиске покемона из истории? Удаленная информация не подлежит восстонавлению</div>
-            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">удалить</button><button class="btn btn-white modal-del-find__btn-close">отмена</button></div>
+            <div class="modal-del-find__btns"> <button class="btn btn-black modal-del-find__btn-exit">Удалить</button><button class="btn btn-white modal-del-find__btn-close">Отмена</button></div>
         </div>
     </div>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div class="modal-reg" id="registration">
+        <div class="modal-reg__body">
+            <div class="modal-reg__close"></div>
+            <div class="modal-reg__title">регистрация аккаунта</div>
+            <form class="modal-reg__form">
+                <div class="modal-reg__form-wrapper"> <input class="modal-form-input modal-reg__nic" type="text" name="login" placeholder="Никнейм"><input class="modal-form-input modal-reg__email" type="text" name="email" placeholder="E-mail"></div>
+                <div class="modal-reg__form-wrapper"><input class="modal-form-input modal-reg__pass" type="password" name="pass" placeholder="Пароль"><input class="modal-form-input modal-reg__repeat-pass" type="password" name="repeat-pass" placeholder="Подтверждени пароля"></div>
+                <div class="modal-reg__agreement"><input class="modal-reg__agr-check" type="checkbox" id="agreement-reg" checked><label for="agreement-reg"> <span>Согласие на <a href="">обработку персональных данных</a></span></label></div>
+                <div class="modal-reg__form-wrapper"><input class="modal-reg__submit modal-form-submit btn btn-black" type="submit" value="Зарегистрироваться"></div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-login" id="login">
+        <div class="modal-login__body">
+            <div class="modal-login__close"> </div>
+            <div class="modal-login__title">войти в аккаунт</div>
+            <div class="modal-login__subtitle">Если у вас еще нет аккаунта - пройдите <a class="modal-open-reg" href="#registration">регистрацию</a></div>
+            <form class="modal-login__form">
+                <div class="modal-login__wrapper"><input class="modal-login__input modal-form-input" type="text" placeholder="E-mail"><input class="modal-login__input modal-form-input" type="text" placeholder="Пароль"></div>
+                <div class="modal-login__wrapper modal-login__wrapper--btns"><a class="modal-open-forgot" href="#restore-pass">забыли пароль?</a><input class="modal-login__submit modal-form-submit btn btn-black" type="submit" value="Войти"></div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-forgot" id="restore-pass">
+        <div class="modal-forgot__body">
+            <div class="modal-forgot__close"></div>
+            <div class="modal-forgot__title">Забыли пароль?</div>
+            <div class="modal-forgot__subtitle">Для восстонавления пароля введите ваш email</div>
+            <form class="modal-forgot__form"><input class="modal-form-input modal-forgot__input" type="text" placeholder="E-mail"><input class="modal-form-submit btn btn-black modal-forgot__submit" type="submit" value="Отправить"></form>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
